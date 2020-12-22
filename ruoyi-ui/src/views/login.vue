@@ -54,7 +54,7 @@
       </el-form-item>
 
       <el-row>
-        <el-checkbox v-model="loginForm.rememberMe" style="margin:0px 0px 25px 0px;">记住密码</el-checkbox>
+        <el-checkbox v-model="loginForm.rememberMe" style="margin:0px 0px 25px 0px;">{{isSmsLogin ? '记住手机号' : '记住密码'}}</el-checkbox>
         <div class="sms-login">
           <el-button
             size="mini"
